@@ -10,20 +10,20 @@ class Hapi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-darwin-arm64.tar.gz"
-      sha256 "aedb5ca4c4c3a9537ea6a8dec2ee13658e2ea424fc8c899d258cb35503d7b29b"
+      sha256 "ca608ba8932d82f6ef2fdea59419031f545921394ae6bc1c5dfde037a59128d6"
     else
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-darwin-x64.tar.gz"
-      sha256 "117cfce04e3d2d3e8d00a260b31911b80c4190cdcbde1257ed1ceb792c3e4cf0"
+      sha256 "6dc153882ff36abb407437e62091d2e5a8d01cfaa1d2e0ce8966a93e7df778ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-linux-arm64.tar.gz"
-      sha256 "2b4e75c896ae082711f4e75b5e2ac15d6882cce47873fd5e490ad55fa3093b33"
+      sha256 "508371182be122879db3862049ed8405a015154caf7ff639c82e4d8239daea15"
     else
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-linux-x64.tar.gz"
-      sha256 "c6017d955432ba67f0e8b2ce8a761935cc1933580b1ddc3497f08b0d7dff4aa2"
+      sha256 "10045fcc3436e4b05e3784d427a39ce0f8ccdda1ed1d62cd726e585bd48637fd"
     end
   end
 
