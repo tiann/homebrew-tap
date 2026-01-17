@@ -4,26 +4,26 @@
 class Hapi < Formula
   desc "App for agentic coding - access coding agent anywhere"
   homepage "https://github.com/tiann/hapi"
-  version "0.8.2"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-darwin-arm64.tar.gz"
-      sha256 "9d75d499978d9add7f0d6d79f7237425045a717fa3c7384ddca58ae27067c786"
+      sha256 "3cb0cf33d095daf8494864c3edb0eff3525e039c5f080074fbfad3dfdbeff85a"
     else
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-darwin-x64.tar.gz"
-      sha256 "9bd0af02c256eefb051db1bf6d9579a307915158a94e8f9438667348d8b37ca4"
+      sha256 "8c6e2fbfc439914c8e6c960fa33711089efe766e211880bff4d842ee606ba0a9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-linux-arm64.tar.gz"
-      sha256 "27db02c472bd338099ab1f6c9beab2913a1673367f73f1929675618dfb20e6ea"
+      sha256 "de8bf3d4eb7246b55ba0e0dd341ac6810ae542b86809b3c0e38635ab9f8750d0"
     else
       url "https://github.com/tiann/hapi/releases/download/v#{version}/hapi-linux-x64.tar.gz"
-      sha256 "7559902d18aa4f8e77061395413f6c0260c2b5012c91278835a5e1e12c35fe9e"
+      sha256 "7f250fe83f0a4857a7635fb696660144ef0bc0791c649f2689009d84dab70d72"
     end
   end
 
